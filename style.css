@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-bg-color: #1f2937;
+    --call-to-action-color: #3882f6;
+    --main-text-color: #f9faf8;
+    --secondary-text-color: #e5e7eb;
+
+    --main-text-weight: 900;
+
+    --main-text-size: 48px;
+    --secondary-text-size: 18px;
+    --header-logo-text-size: 24px;
+    --information-header-text-size: 36px;
+}
+
+html {
+    scroll-padding: 4.75rem;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--main-text-color);
+    background-color: var(--call-to-action-color);
+    cursor: pointer;
+}
+
+main>section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1030px;
+    width: 100%;
+}
+
+main>section:nth-of-type(2n + 1) {
+    background-color: var(--secondary-text-color);
+}
+
+/* ------------------------ header ------------------------ */
+body>header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background-color: var(--dark-bg-color);
+}
+
+body>header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: var(--header-logo-text-size);
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+body>header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+body>header li {
+    font-size: var(--secondary-text-size);
+    color: var(--secondary-text-color);
+}
+
+/* ------------------------ hero ------------------------ */
+#hero {
+    background-color: var(--dark-bg-color);
+}
+
+#hero .content-wrapper {
+    gap: 4rem;
+}
+
+#hero .left {
+    flex: 1;
+}
+
+#hero h1 {
+    font-size: var(--main-text-size);
+    font-weight: var(--main-text-weight);
+    color: var(--main-text-color);
+
+}
+
+#hero p {
+    margin: 0.75rem 0;
+    text-align: justify;
+    font-size: var(--secondary-text-size);
+    color: var(--secondary-text-color);
+}
+
+#hero .img-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 15rem;
+    max-width: calc(50%);
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+#hero .img-placeholder div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    background-color: #6d747d;
+}
+
+/* ------------------------ section1 ------------------------ */
+#section1 .content-wrapper {
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#section1 .items-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+#section1 .item {
+    max-width: 12rem;
+}
+
+#section1 .item .img {
+    aspect-ratio: 1;
+    margin-bottom: 0.5rem;
+    border: 4px solid var(--call-to-action-color);
+    border-radius: 0.75rem;
+}
+
+/* ------------------------ section2 ------------------------ */
+blockquote {
+    max-width: 54rem;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    color: var(--dark-bg-color);
+}
+
+cite {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+/* ------------------------ section3 ------------------------ */
+#section3 .sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 2.5rem 6rem;
+    border-radius: 0.5rem;
+    color: var(--main-text-color);
+    background-color: var(--call-to-action-color);
+}
+
+#section3 button {
+    border: 1px solid var(--main-text-color);
+}
+
+/* ------------------------ footer ------------------------ */
+body>footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--main-text-color);
+    background-color: var(--dark-bg-color);
+}
