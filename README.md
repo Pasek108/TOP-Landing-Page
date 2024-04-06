@@ -31,3 +31,9 @@ Programs:
 
 ## Features
 - **All of the project requirements**
+
+<br>
+
+> [!NOTE]  
+> Room for improvements:
+> - Responsive on mobile
